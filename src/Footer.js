@@ -8,7 +8,7 @@ export default function Footer() {
         {" "}
         🎨{" "}
         <a
-          href="https://github.com/SkippyWalnuts/Walnuts-Weather-App"
+          href="https://github.com/SkippyWalnuts/weather-react"
           className="gitHub.source.link"
         >
           Source-Code
