@@ -1,0 +1,66 @@
+.Weather .weatherText {
+    margin-left: 20px;
+  }
+  
+  .Weather h1 {
+    font-size: 60px;
+    font-weight: bolder;
+  }
+  
+  .Weather h2 {
+    display: inline;
+    font-size: 28px;
+  }
+  
+  .Weather h3 {
+    display: inline;
+    font-size: 25px;
+  }
+  
+  .Weather h4 {
+    font-size: 25px;
+    text-transform: capitalize;
+  }
+  
+  .Weather h5 {
+    font-size: 15px;
+  }
+  
+  .Weather ul {
+    padding: 0;
+  }
+  
+  .Weather li {
+    list-style: none;
+    font-size: 20px;
+  }
+  
+  .Weather .date {
+    color: #f5005bff;
+  }
+  
+  .Weather img {
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 576px) {
+    .Weather h1 {
+      font-size: 40px;
+      font-weight: bolder;
+      margin-top: 10px;
+    }
+  
+    .Weather h4 {
+      font-size: 20px;
+      text-transform: capitalize;
+    }
+  
+    .Weather h5 {
+      font-size: 10px;
+    }
+  
+    .Weather ul {
+      display: none;
+    }
+  }
+  

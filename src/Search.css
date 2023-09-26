@@ -1,0 +1,11 @@
+.Search .search-form {
+    display: block;
+    margin: 20px;
+  }
+  
+  @media (max-width: 576px) {
+    .Search .search-button {
+      margin-top: 10px;
+    }
+  }
+  
