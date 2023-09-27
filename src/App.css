@@ -4,17 +4,15 @@ body {
   min-width: 468px;
 }
 
-.Search .search-form {
-  display: block;
-  margin: 20px;
-}
-
 .App {
   font-family: sans-serif;
   margin: 60px auto;
   max-width: 660px;
   text-align: center;
-      
+}
+
+.App h1 {
+  font-size: 70px;
 }
 
 .App .card {
@@ -27,10 +25,18 @@ body {
   text-align: left;
 }
 
+.Search .search-form {
+  display: block;
+  margin: 20px;
+}
 @media (max-width: 576px) {
   body {
     margin: 100px 10px;
   }
+.App h1 {
+  font-size: 50px;
+}
+
   .Search .search-button {
     margin-top: 10px;
   }

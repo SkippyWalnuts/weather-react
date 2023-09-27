@@ -2,18 +2,18 @@
     margin-left: 20px;
   }
   
-  .Weather h1 {
+  .Weather h2 {
     font-size: 50px;
     font-weight: 700;
   }
   
-  .Weather h2 {
+  .Weather h3 {
     display: inline;
     font-size: 40px;
     font-weight: 500;
   }
   
-  .Weather h3 {
+  .Weather h4 {
     display: inline;
     font-size: 25px;
     font-weight: 450;
@@ -21,12 +21,12 @@
     top: -9px;
   }
   
-  .Weather h4 {
+  .Weather h5 {
     font-size: 22px;
     text-transform: uppercase;
   }
   
-  .Weather h5 {
+  .Weather h6 {
     font-size: 13px;
   }
   

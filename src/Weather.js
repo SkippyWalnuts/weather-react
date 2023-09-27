@@ -9,7 +9,6 @@ const [weather, setWeather] = useState(null);
 
 function displayResults(response) {
 setLoaded(true);
-console.log(response.data)
 setWeather({
   temperature: Math.round(response.data.temperature.current),
   description: response.data.condition.description,
@@ -66,17 +65,17 @@ if (loaded) {
 
       <div className="row">
         <div className="col weatherText">
-          <h1 className="city">{city}</h1>
-          <h2>{weather.temperature}</h2>
-          <h3>°C</h3>
-          <h4>{weather.description}</h4>
+          <h2 className="city">{city}</h2>
+          <h3>{weather.temperature}</h3>
+          <h4>°C</h4>
+          <h5>{weather.description}</h5>
           <ul>
             <li>Humidity: {weather.humidity}%</li>
             <li>Wind: {weather.wind}km/h</li>
           </ul>
-          <h5>
+          <h6>
             Last updated: <span className="date">Wednesday 11:00</span>
-          </h5>
+          </h6>
         </div>
         <div className="col">
           <img
