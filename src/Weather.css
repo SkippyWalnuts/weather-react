@@ -4,22 +4,26 @@
   
   .Weather h1 {
     font-size: 50px;
-    font-weight: bolder;
+    font-weight: 700;
   }
   
   .Weather h2 {
     display: inline;
-    font-size: 28px;
+    font-size: 40px;
+    font-weight: 500;
   }
   
   .Weather h3 {
     display: inline;
-    font-size: 20px;
+    font-size: 25px;
+    font-weight: 450;
+    position: relative;
+    top: -9px;
   }
   
   .Weather h4 {
     font-size: 22px;
-    text-transform: capitalize;
+    text-transform: uppercase;
   }
   
   .Weather h5 {
@@ -32,7 +36,7 @@
   
   .Weather li {
     list-style: none;
-    font-size: 18px;
+    font-size: 15px;
   }
   
   .Weather .date {

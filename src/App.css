@@ -1,4 +1,5 @@
 body {
+  background-color: rgb(204, 204, 204, 0.6);
   margin: 100px 50px;
   min-width: 468px;
 }
@@ -12,6 +13,8 @@ body {
 }
 
 .App .card {
+  border: solid 1px #f73278;
+  box-shadow: 3px 3px 3px rgb(93, 91, 112, 0.8);
   color: #3f3d56;
   font-family: "Quicksand", sans-serif;
   margin-bottom: 20px;

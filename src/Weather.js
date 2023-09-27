@@ -15,8 +15,10 @@ export default function Weather() {
       <div className="row">
         <div className="col weatherText">
           <h1 className="city">{weatherData.city}</h1>
+          <div className="city-temp">
           <h2>{weatherData.temperature}</h2>
           <h3>°C</h3>
+          </div>
           <h4>{weatherData.description}</h4>
           <ul>
             <li>Humidity: {weatherData.humidity}%</li>
