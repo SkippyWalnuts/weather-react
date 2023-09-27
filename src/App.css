@@ -4,6 +4,11 @@ body {
   min-width: 468px;
 }
 
+.Search .search-form {
+  display: block;
+  margin: 20px;
+}
+
 .App {
   font-family: sans-serif;
   margin: 60px auto;
@@ -25,5 +30,8 @@ body {
 @media (max-width: 576px) {
   body {
     margin: 100px 10px;
+  }
+  .Search .search-button {
+    margin-top: 10px;
   }
 }

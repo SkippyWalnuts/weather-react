@@ -1,5 +1,4 @@
 import React from "react";
-import Search from "./Search";
 import Weather from "./Weather";
 import Footer from "./Footer";
 import "./App.css";
@@ -7,9 +6,9 @@ import "./App.css";
 export default function App() {
   return (
     <div className="App">
+      <h1>City-Weather Search</h1>
       <div className="card">
-        <Search />
-        <Weather />
+       <Weather />
       </div>
       <Footer />
     </div>
