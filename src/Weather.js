@@ -8,13 +8,15 @@ const [city, setCity] = useState(props.defaultCity);
 
 
 function displayResults(response) {
+  console.log(response.data)
  setWeatherData({
   ready: true,
   city: response.data.city,
   temperature: Math.round(response.data.temperature.current),
   description: response.data.condition.description,
   humidity: Math.round(response.data.temperature.humidity),
-  wind: Math.round(response.data.wind.speed)
+  wind: Math.round(response.data.wind.speed),
+  icon: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
 });
 }
 
@@ -77,10 +79,11 @@ if (weatherData.ready) {
           </h6>
         </div>
         <div className="col">
+          <img src={weatherData.icon} className="img-fluid" alt={weatherData.description}></img>
           <img
             src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/883/original/undraw_Weather.png?1694609650"
             className="weather-img img-fluid"
-            alt="weather"
+            alt="person holding a sun while stood on a cloud"
           />
         </div>
       </div>
