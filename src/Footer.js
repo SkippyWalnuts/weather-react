@@ -13,7 +13,7 @@ export default function Footer() {
         >
           Source-Code
         </a>{" "}
-        by Rebecca Early 👾
+        by Becca Early 👾
       </p>
     </div>
   );

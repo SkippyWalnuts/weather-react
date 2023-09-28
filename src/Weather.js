@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DateFunction from "./DateFunction";
 import axios from "axios";
 import "./Weather.css";
 
@@ -9,9 +10,10 @@ const [city, setCity] = useState(props.defaultCity);
 
 function displayResults(response) {
   console.log(response.data)
- setWeatherData({
+  setWeatherData({
   ready: true,
   city: response.data.city,
+  date: new Date(response.data.time * 1000),
   temperature: Math.round(response.data.temperature.current),
   description: response.data.condition.description,
   humidity: Math.round(response.data.temperature.humidity),
@@ -82,7 +84,7 @@ if (weatherData.ready) {
         </div>
         </div>
         <h6>
-            Last updated: <span className="date">Wednesday 11:00</span>
+            Last updated: <span className="date"><DateFunction date={weatherData.date}/></span>
           </h6>
     </div>
         
