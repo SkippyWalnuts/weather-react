@@ -2,32 +2,34 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./Weather.css";
 
-export default function Weather() {
-const [city, setCity] = useState(null);
-const [loaded, setLoaded] = useState(false);
-const [weather, setWeather] = useState(null);
+export default function Weather(props) {
+const [weatherData, setWeatherData] = useState({ ready: false });
+const [city, setCity] = useState(props.defaultCity);
+
 
 function displayResults(response) {
-setLoaded(true);
-setWeather({
+setWeatherData({
+  ready: true,
   temperature: Math.round(response.data.temperature.current),
   description: response.data.condition.description,
   humidity: Math.round(response.data.temperature.humidity),
   wind: Math.round(response.data.wind.speed)
-})
-
+});
 }
 
 function handleSubmit(event) {
   event.preventDefault();
+  search();
+}
+
+function search() {
   const apiKey = `6dt04340acdo33333a0be9731ef54b37`;
-  const apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`
   axios.get(apiUrl).then(displayResults);
-  
 }
 
 function logCity(event) {
-  event.preventDefault();
+event.preventDefault();
 setCity(event.target.value);
 }
 
@@ -58,7 +60,7 @@ let form = (
     </div>
 );
 
-if (loaded) {
+if (weatherData.ready) {
   return (
     <div className="Weather">
           {form}
@@ -66,12 +68,12 @@ if (loaded) {
       <div className="row">
         <div className="col weatherText">
           <h2 className="city">{city}</h2>
-          <h3>{weather.temperature}</h3>
+          <h3>{weatherData.temperature}</h3>
           <h4>°C</h4>
-          <h5>{weather.description}</h5>
+          <h5>{weatherData.description}</h5>
           <ul>
-            <li>Humidity: {weather.humidity}%</li>
-            <li>Wind: {weather.wind}km/h</li>
+            <li>Humidity: {weatherData.humidity}%</li>
+            <li>Wind: {weatherData.wind}km/h</li>
           </ul>
           <h6>
             Last updated: <span className="date">Wednesday 11:00</span>
@@ -88,6 +90,7 @@ if (loaded) {
     </div>
   );
 } else {
-  return form;
+  search();
+  return "Loading";
 }
 }
