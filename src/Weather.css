@@ -46,6 +46,7 @@
   .Weather img {
     margin-top: 10px;
   }
+
   
   @media (max-width: 576px) {
     .Weather h1 {
