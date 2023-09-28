@@ -8,9 +8,8 @@
 }
 
   .Weather h2 {
-    
-    font-family: 'Handlee', cursive;
-    font-size: 45px;
+    font-family: 'Mooli', sans-serif;
+    font-size: 42px;
     font-weight: 600;
     line-height: 1;
     margin: 0;
@@ -20,13 +19,14 @@
   
   .Weather h3 {
     display: inline;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 500;
   }
   
   .Weather h4 {
     display: inline;
-    font-size: 25px;
+    font-family: 'Mooli', sans-serif;
+    font-size: 20px;
     font-weight: 450;
     position: relative;
     top: -9px;
@@ -46,6 +46,7 @@
   
   .Weather h6 {
     font-size: 13px;
+    letter-spacing: 3px;
     text-align: center;
   }
   
@@ -54,6 +55,8 @@
   }
   
   .Weather li {
+    font-weight: bold;
+    letter-spacing: 4px;
     list-style: none;
     font-size: 15px;
   }
