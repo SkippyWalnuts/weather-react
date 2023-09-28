@@ -66,10 +66,8 @@ if (weatherData.ready) {
     
 <div className="weatherText">
       <div className="row weatherCity">
-      <h2>{weatherData.city}</h2>
-      </div>  
-         <div className="row weatherInfo">
-          <div className="col">
+      <div className="col">
+        <h2>{weatherData.city}</h2>           
          <h3>{weatherData.temperature}</h3>
          <h4>°C</h4>
          <img src={weatherData.icon} className="weather-icon img-fluid" alt={weatherData.description}></img>

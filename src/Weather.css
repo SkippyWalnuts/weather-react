@@ -4,11 +4,7 @@
 }
 
 .Weather .weatherText {
-  margin: 20px;
-}
-
-.Weather .weatherCity {
-  margin-top: 20px;
+  padding: 5px 2px 0 35px;
 }
 
   .Weather h2 {
@@ -41,8 +37,10 @@
     top: -9px;
   }
 
-  .Weather .weatherText h5 {
-    font-size: 18px;
+  .Weather h5 {
+    font-size: 20px;
+    line-height: 1;
+    margin-top: 10px;
     text-transform: uppercase;
   }
   
