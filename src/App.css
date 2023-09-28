@@ -12,7 +12,11 @@ body {
 }
 
 .App h1 {
-  font-size: 70px;
+  font-family: 'Handlee', cursive;
+  font-size: 60px;
+  font-weight: bolder;
+  margin: 100px auto 20px;
+  text-transform: uppercase;
 }
 
 .App .card {
