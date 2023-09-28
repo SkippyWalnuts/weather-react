@@ -39,7 +39,8 @@ function search() {
 if (weatherData.ready) {
   return (
     <div className="Weather">
-      <div className="Search">
+
+      
       <form className="search-form" onSubmit={handleSubmit} id="Search form">
         <div className="row">
           <div className="col-sm-9">
@@ -62,32 +63,31 @@ if (weatherData.ready) {
           </div>
         </div>
       </form>
-    </div>
-
-      <div className="row">
-        <div className="col weatherText">
-          <h2 className="city">{weatherData.city}</h2>
-          <h3>{weatherData.temperature}</h3>
-          <h4>°C</h4>
-          <h5>{weatherData.description}</h5>
+    
+<div className="weatherText">
+      <div className="row weatherCity">
+      <h2>{weatherData.city}</h2>
+      </div>  
+         <div className="row weatherInfo">
+          <div className="col">
+         <h3>{weatherData.temperature}</h3>
+         <h4>°C</h4>
+         <img src={weatherData.icon} className="weather-icon img-fluid" alt={weatherData.description}></img>
+         </div>
+         <div className="col">
+         <h5>{weatherData.description}</h5>
           <ul>
             <li>Humidity: {weatherData.humidity}%</li>
             <li>Wind: {weatherData.wind}km/h</li>
           </ul>
-          <h6>
+         </div>
+        </div>
+        </div>
+        <h6>
             Last updated: <span className="date">Wednesday 11:00</span>
           </h6>
-        </div>
-        <div className="col">
-          <img src={weatherData.icon} className="img-fluid" alt={weatherData.description}></img>
-          <img
-            src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/096/883/original/undraw_Weather.png?1694609650"
-            className="weather-img img-fluid"
-            alt="person holding a sun while stood on a cloud"
-          />
-        </div>
-      </div>
     </div>
+        
   );
 } else {
   search();

@@ -1,13 +1,26 @@
-.Weather .weatherText {
-    margin-left: 20px;
-  }
   
+.Weather .search-form {
+  margin: 20px;
+}
+
+.Weather .weatherText {
+  margin: 20px;
+}
+
+.Weather .weatherCity {
+  margin-top: 20px;
+}
+
   .Weather h2 {
+    
     font-family: 'Handlee', cursive;
     font-size: 45px;
     font-weight: 600;
-    margin: 0 auto;
+    line-height: 1;
+    margin: 0;
   }
+
+  
   
   .Weather h3 {
     display: inline;
@@ -22,14 +35,20 @@
     position: relative;
     top: -9px;
   }
-  
-  .Weather h5 {
-    font-size: 22px;
+
+  .weather-icon {
+    position: relative;
+    top: -9px;
+  }
+
+  .Weather .weatherText h5 {
+    font-size: 18px;
     text-transform: uppercase;
   }
   
   .Weather h6 {
     font-size: 13px;
+    text-align: center;
   }
   
   .Weather ul {
@@ -47,6 +66,7 @@
 
   
   @media (max-width: 576px) {
+   
     .Weather h2 {
       font-size: 40px;
       font-weight: bolder;
