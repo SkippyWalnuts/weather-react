@@ -8,8 +8,9 @@ const [city, setCity] = useState(props.defaultCity);
 
 
 function displayResults(response) {
-setWeatherData({
+ setWeatherData({
   ready: true,
+  city: response.data.city,
   temperature: Math.round(response.data.temperature.current),
   description: response.data.condition.description,
   humidity: Math.round(response.data.temperature.humidity),
@@ -22,19 +23,21 @@ function handleSubmit(event) {
   search();
 }
 
+function logCity(event) {
+setCity(event.target.value);
+}
+
 function search() {
   const apiKey = `6dt04340acdo33333a0be9731ef54b37`;
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`
   axios.get(apiUrl).then(displayResults);
 }
 
-function logCity(event) {
-event.preventDefault();
-setCity(event.target.value);
-}
 
-let form = (
-  <div className="Search">
+if (weatherData.ready) {
+  return (
+    <div className="Weather">
+      <div className="Search">
       <form className="search-form" onSubmit={handleSubmit} id="Search form">
         <div className="row">
           <div className="col-sm-9">
@@ -58,16 +61,10 @@ let form = (
         </div>
       </form>
     </div>
-);
-
-if (weatherData.ready) {
-  return (
-    <div className="Weather">
-          {form}
 
       <div className="row">
         <div className="col weatherText">
-          <h2 className="city">{city}</h2>
+          <h2 className="city">{weatherData.city}</h2>
           <h3>{weatherData.temperature}</h3>
           <h4>°C</h4>
           <h5>{weatherData.description}</h5>
