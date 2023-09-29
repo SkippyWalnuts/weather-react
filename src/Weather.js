@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import DateFunction from "./DateFunction";
+import WeatherForecast from "./WeatherForecast";
 import axios from "axios";
 import "./Weather.css";
 
@@ -67,6 +68,7 @@ if (weatherData.ready) {
         </div>
       </form>
       <WeatherInfo data={weatherData} />
+      <WeatherForecast city={weatherData.city}/>
          <h6>
             Last updated: <span className="date"><DateFunction date={weatherData.date}/></span>
           </h6>
