@@ -19,7 +19,7 @@ function displayResults(response) {
   description: response.data.condition.description,
   humidity: Math.round(response.data.temperature.humidity),
   wind: Math.round(response.data.wind.speed),
-  icon: `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
+  icon: response.data.condition.icon
 });
 }
 
@@ -66,7 +66,7 @@ if (weatherData.ready) {
           </div>
         </div>
       </form>
-      <WeatherInfo data={weatherData}/>
+      <WeatherInfo data={weatherData} />
          <h6>
             Last updated: <span className="date"><DateFunction date={weatherData.date}/></span>
           </h6>
