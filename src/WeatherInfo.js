@@ -5,10 +5,16 @@ export default function WeatherInfo(props) {
     return (<div className="weatherInfo">
     <div className="row weatherCity">
     <div className="col">
-      <h2>{props.data.city}</h2>           
+      <h2>{props.data.city}</h2>
+      <div className="row">      
+      <div className="col-5">
        <h3>{props.data.temperature}</h3>
        <h4>°C</h4>
-       <WeatherIcon code={props.data.icon} className="weather-icon"/>
+       </div>
+       <div className="col ps-0">
+       <WeatherIcon code={props.data.icon} />
+       </div>
+       </div>
        </div>
        <div className="col">
        <h5>{props.data.description}</h5>

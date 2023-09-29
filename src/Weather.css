@@ -30,12 +30,9 @@
     font-weight: 450;
     position: relative;
     top: -9px;
-  }
+  } 
 
-  .weather-icon {
-    position: relative;
-    top: -9px;
-  }
+
 
   .Weather h5 {
     font-size: 20px;
