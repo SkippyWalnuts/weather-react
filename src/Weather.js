@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import WeatherInfo from "./WeatherInfo";
 import DateFunction from "./DateFunction";
 import axios from "axios";
 import "./Weather.css";
@@ -65,28 +66,11 @@ if (weatherData.ready) {
           </div>
         </div>
       </form>
-    
-<div className="weatherText">
-      <div className="row weatherCity">
-      <div className="col">
-        <h2>{weatherData.city}</h2>           
-         <h3>{weatherData.temperature}</h3>
-         <h4>°C</h4>
-         <img src={weatherData.icon} className="weather-icon img-fluid" alt={weatherData.description}></img>
-         </div>
-         <div className="col">
-         <h5>{weatherData.description}</h5>
-          <ul>
-            <li>Humidity: {weatherData.humidity}%</li>
-            <li>Wind: {weatherData.wind}km/h</li>
-          </ul>
-         </div>
-        </div>
-        </div>
-        <h6>
+      <WeatherInfo data={weatherData}/>
+         <h6>
             Last updated: <span className="date"><DateFunction date={weatherData.date}/></span>
           </h6>
-    </div>
+ </div>
         
   );
 } else {
