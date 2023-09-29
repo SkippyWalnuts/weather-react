@@ -26,13 +26,11 @@
   .Weather h4 {
     display: inline;
     font-family: 'Mooli', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 450;
     position: relative;
     top: -9px;
   } 
-
-
 
   .Weather h5 {
     font-size: 20px;
