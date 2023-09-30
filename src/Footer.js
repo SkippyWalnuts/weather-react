@@ -3,9 +3,9 @@ import "./Footer.css";
 
 export default function Footer() {
   return (
-    <div className="Footer fixed-bottom">
+    <div className="Footer mt-5">
       <p>
-        {" "}
+        {""}
         🎨{" "}
         <a
           href="https://github.com/SkippyWalnuts/weather-react"
@@ -15,7 +15,11 @@ export default function Footer() {
         >
           Source-Code
         </a>{" "}
-        by Becca Early 👾
+        by <a href="https://visionary-dragon-63ebd9.netlify.app/"
+         target="_blank"
+         rel="true noopener noreferrer">
+          Becca Early
+          </a>{" "}👾{""}
       </p>
     </div>
   );
