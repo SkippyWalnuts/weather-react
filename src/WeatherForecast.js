@@ -18,6 +18,12 @@ setLoaded(false);
     setLoaded(true);
     }
 
+    function load() {
+        let apiKey = `6dt04340acdo33333a0be9731ef54b37`
+        let apiUrl =`https://api.shecodes.io/weather/v1/forecast?query=${props.city}&key=${apiKey}&units=metric`
+        axios.get(apiUrl).then(handleResponse);
+    }
+
     
 
     if (loaded) {
@@ -40,11 +46,9 @@ setLoaded(false);
     </div>
     );
     }
-    
+
     else {
-        let apiKey = `6dt04340acdo33333a0be9731ef54b37`
-        let apiUrl =`https://api.shecodes.io/weather/v1/forecast?query=${props.city}&key=${apiKey}&units=metric`
-        axios.get(apiUrl).then(handleResponse);
+        load();
     return null;
       
 }
