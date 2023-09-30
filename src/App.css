@@ -1,6 +1,5 @@
 body {
-  background-color: rgb(204, 204, 204);
-  margin: 100px 50px;
+  background-color: rgb(164, 162, 162);
   min-width: 468px;
 }
 
@@ -11,33 +10,35 @@ body {
 }
 
 .App h1 {
+  border: solid 2px white;
+  border-radius: 5px;
+  color: white;
   font-family: 'Mooli', sans-serif;
-  font-size: 48px;
+  font-size: 43px;
   font-weight: bolder;
-  margin: 100px auto 20px;
+  margin: 80px auto 20px; 
+  padding: 20px;
+  text-align: center;
   text-transform: uppercase;
 }
 
 .App .card {
-  border: solid 1px #f73278;
+  background-color: #8fc0da;
+  border: solid 2px white;
   box-shadow: 3px 3px 3px rgb(93, 91, 112, 0.8);
-  color: #3f3d56;
+  color: #2a2a2a;
   font-family: "Quicksand", sans-serif;
-  margin-bottom: 20px;
-  padding: 10px 30px 20px;
+  padding: 20px;
   text-align: left;
 }
 
-.Search .search-form {
-  display: block;
-  margin: 20px;
-}
-@media (max-width: 576px) {
+
+@media (max-width: 650px) {
   body {
-    margin: 100px 10px;
+    margin: 10px;
   }
 .App h1 {
-  font-size: 50px;
+  font-size: 38px;
 }
 
   .Search .search-button {

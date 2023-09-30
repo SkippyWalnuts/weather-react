@@ -1,6 +1,22 @@
 .Footer {
-    display: block;
+  color: white;
+  border: solid 2px white;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  padding: 10px;
+  text-align: center;
+  }
+
+  .Footer p {
     margin: 0 auto;
-    text-align: center;
+  }
+
+  .Footer a {
+    color: white;
+  }
+ 
+  .Footer a:hover {
+    color: #f5005bff;
   }
   

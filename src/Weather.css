@@ -3,8 +3,13 @@
   margin: 20px;
 }
 
-.Weather .weatherInfo {
-  padding: 5px 2px 0 35px;
+.Weather .search-button {
+  background-color: rgb(245, 0, 91, 0.7);
+  color: white;
+  font-weight: 450;
+}
+.Weather .search-button:hover, .search-field:hover {
+  transform: scale(1.1);
 }
 
   .Weather h2 {
@@ -12,10 +17,7 @@
     font-size: 42px;
     font-weight: 600;
     line-height: 1;
-    margin: 0;
   }
-
-  
   
   .Weather h3 {
     display: inline;
@@ -32,6 +34,11 @@
     top: -9px;
   } 
 
+  .weatherIcon {
+    padding: 0;
+  }
+
+
   .Weather h5 {
     font-size: 20px;
     line-height: 1;
@@ -40,7 +47,7 @@
   }
   
   .Weather h6 {
-    font-size: 13px;
+    font-size: 15px;
     letter-spacing: 3px;
     text-align: center;
   }
@@ -55,9 +62,29 @@
     list-style: none;
     font-size: 15px;
   }
+
+  a {
+    text-decoration: none;
+    transition: all ease-in-out 80ms;
+  }
+
+  a:hover {
+    color: #f5005bff;
+    font-weight: 800;
+    transform: scale(1.5);
+  }
   
   .Weather .date {
     color: #f5005bff;
+  }
+
+  .WeatherForecastDay {
+    font-size: 18px;
+    font-weight: 450;
+  }
+
+  .WeatherForecastDay .ForecastTempMin {
+    opacity: 0.6;
   }
 
   
@@ -71,16 +98,16 @@
   
     .Weather h5 {
       font-size: 20px;
+      margin-top: 20px;
           }
   
     .Weather h6 {
       font-size: 10px;
     }
-  
-    
 
-    .Weather .weather-img {
-      display: none;
+    .WeatherForecastDay {
+      font-size: 15px;
+      
     }
   }
   
