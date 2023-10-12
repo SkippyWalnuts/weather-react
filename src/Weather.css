@@ -116,11 +116,11 @@
     }
 
     .Weather li, .WeatherForecastDay .ForecastTemps {
-      font-size: 13px;
+      font-size: 12px;
     }
 
     .WeatherForecastDay {
-      font-size: 15px;
+      font-size: 14px;
     }
 
   }
