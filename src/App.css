@@ -35,16 +35,16 @@ body {
 
 @media (max-width: 650px) {
   body {
-    margin: 10px;
+    margin: 0 10px;
   }
 
   .App {
-margin: 20px auto;
+    margin: 0 auto;
   }
 
 .App h1 {
   font-size: 35px;
-  margin: 50px auto 10px;
+  margin: 30px auto 10px;
 }
 
   .Search .search-button {
