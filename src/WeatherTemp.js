@@ -22,14 +22,14 @@ if (unit === "celsius") {
     return (
     <div className="col-7">
     <h3>{props.celsius}</h3>
-    <h4>°C | °<a href="/" onClick={displayFahrenheit}>F</a></h4>
+    <h4>°C | °<a href="/" id="link to display temperature in fahrenheit" onClick={displayFahrenheit}>F</a></h4>
     </div>);
 } else {
     
     return (
         <div className="col-7">
         <h3>{Math.round(fahrenheit())}</h3>
-        <h4>°<a href="/" onClick={displayCelsius}>C</a> | °F</h4>
+        <h4>°<a href="/" id="link to display temperature in celsius" onClick={displayCelsius}>C</a> | °F</h4>
         </div>);
 }
 }

@@ -53,7 +53,7 @@ if (weatherData.ready) {
               autoFocus="on"
               autoComplete="off"
               className="form-control shadow-sm search-field"
-              id="search form entry"
+              id="word entry for search form"
               onChange={logCity}
             />
           </div>
@@ -61,6 +61,7 @@ if (weatherData.ready) {
             <input
               type="submit"
               value="Search"
+              id="search button for search form"
               className="form-control btn shadow-sm search-button"
             />
           </div>
