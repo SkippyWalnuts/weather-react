@@ -3,7 +3,7 @@ import WeatherIcon from "./WeatherIcon";
 import WeatherTemp from "./WeatherTemp";
 
 export default function WeatherInfo(props) {
-    return (<div className="weatherInfo m-4">
+    return (<div className="weatherInfo m-3">
     <div className="row">
     <div className="col">
       <h2>{props.data.city}</h2>
