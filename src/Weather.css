@@ -107,17 +107,21 @@
     } 
   
     .Weather h5 {
-      font-size: 18px;
+      font-size: 15px;
       margin-top: 20px;
-          }
+    }
   
     .Weather h6 {
       font-size: 10px;
     }
 
+    .Weather li, .WeatherForecastDay .ForecastTemps {
+      font-size: 13px;
+    }
+
     .WeatherForecastDay {
       font-size: 15px;
-      
     }
+
   }
   
