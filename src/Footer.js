@@ -15,7 +15,7 @@ export default function Footer() {
         >
           Source-Code
         </a>{" "}
-        by{" "} <a href="https://visionary-dragon-63ebd9.netlify.app/"
+        by{" "} <a href="https://becca-early.com/"
         id="link to Becca Early's website portfolio"
          target="_blank"
          rel="true noopener noreferrer">
